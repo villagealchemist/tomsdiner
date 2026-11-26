@@ -4,7 +4,7 @@ Canonical repository: [villagealchemist/tomsdiner](https://github.com/villagealc
 
 A shared home for personal, MySpace-inspired `.gay` pages. Kelsey's original page is already live at **koeventing.gay** and remains maintained in its existing repository. This pass does not migrate or republish it. Max Muerte is the first new page in this shared repository.
 
-Each person's page has its own handcrafted markup, content, images, and theme. Common CSS components and browser behavior are shared where useful, while the layouts and creative direction can differ.
+Each person's page has its own handcrafted markup, content, images, and theme. Common CSS components and browser behavior are available where useful. Max uses a dedicated stylesheet and composition, with the shared photo viewer and local guestbook behavior.
 
 Max's page is MJ's creative vision board, presented through the internet of circa 2008. It is live at [maxmuerte.gay](https://maxmuerte.gay/). `maxmuerte.com` remains a separate future official artist site whose direction will be developed with Max. The [design references](people/max-muerte/DESIGN.md) record the font families MJ and Max selected together.
 
