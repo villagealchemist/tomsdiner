@@ -6,7 +6,7 @@ A shared home for personal, MySpace-inspired `.gay` pages. Kelsey's original pag
 
 Each person's page has its own handcrafted markup, content, images, and theme. Common CSS components and browser behavior are shared where useful, while the layouts and creative direction can differ.
 
-Max's page is MJ's creative vision board, presented through the internet of circa 2008. `maxmuerte.gay` is the intended home for this playful concept. `maxmuerte.com` remains a separate future official artist site whose direction will be developed with Max.
+Max's page is MJ's creative vision board, presented through the internet of circa 2008. It is live at [maxmuerte.gay](https://maxmuerte.gay/). `maxmuerte.com` remains a separate future official artist site whose direction will be developed with Max. The [design references](people/max-muerte/DESIGN.md) record the font families MJ and Max selected together.
 
 This preview uses HTML, CSS, and TypeScript with small Node scripts. Node 26 runs the TypeScript tools natively; the build uses Node's built-in `stripTypeScriptTypes` to produce the browser's `shared.js`. There are no runtime dependencies. Development type checks use pinned TypeScript 6.0.3 and Node type definitions 26.1.2.
 

@@ -5,6 +5,9 @@
   "compatibility_date": "2026-11-26",
   "workers_dev": true,
   "preview_urls": false,
+  "routes": [
+    { "pattern": "maxmuerte.gay", "custom_domain": true }
+  ],
   "assets": {
     "directory": "./dist/max-muerte",
     "not_found_handling": "404-page"
