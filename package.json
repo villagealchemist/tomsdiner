@@ -1,0 +1,19 @@
+{
+  "name": "tomsdiner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal MySpace-inspired pages for the extended .gay network.",
+  "engines": {
+    "node": ">=26"
+  },
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "dev": "node scripts/serve.ts",
+    "check": "tsc --noEmit --strict --noUncheckedIndexedAccess --exactOptionalPropertyTypes --erasableSyntaxOnly --target ES2024 --module NodeNext --moduleResolution NodeNext --lib ES2024,DOM,DOM.Iterable --types node --allowImportingTsExtensions scripts/build.ts scripts/serve.ts src/shared.ts"
+  },
+  "devDependencies": {
+    "@types/node": "26.1.2",
+    "typescript": "6.0.3"
+  }
+}
