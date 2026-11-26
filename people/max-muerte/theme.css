@@ -1,0 +1,127 @@
+:root {
+  color-scheme: dark;
+  --ink: #e6d6d9;
+  --paper: #160e13;
+  --wallpaper: #09070a;
+  --edge: #824350;
+  --accent: #e6607d;
+  --link: #f29bb0;
+  --link-hover: #fff0f4;
+  --header: linear-gradient(#3c1423, #130b13);
+  --header-ink: #efdfe5;
+  --nav: linear-gradient(#b53e55, #6c1f34);
+  --nav-ink: #fff2f5;
+  --panel: #20131b;
+  --panel-head: linear-gradient(#8d3048, #50192d);
+  --panel-head-ink: #fff4f6;
+  --photo-mat: #110b11;
+  --label: #472331;
+  --cell: #2a1923;
+  --button: linear-gradient(#4e2b3b, #251521);
+  --network: repeating-linear-gradient(
+    -45deg,
+    #341724 0 12px,
+    #2b1420 12px 24px
+  );
+  --player: linear-gradient(110deg, #33212c, #171017);
+  --selected: #4c2637;
+  --badge: #37212e;
+  --footer: #100b10;
+}
+body {
+  background-image:
+    radial-gradient(ellipse at 50% 0, #64182b55, transparent 60%),
+    repeating-linear-gradient(-45deg, transparent 0 13px, #2b15222e 13px 20px);
+  background-attachment: fixed;
+}
+.layout-banner {
+  background:
+    radial-gradient(ellipse at 50% 120%, #ac263e66, transparent 60%),
+    repeating-linear-gradient(90deg, #0e090e 0 5px, #150b12 5px 6px);
+  color: #e8d5db;
+}
+.layout-banner:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.55;
+  background-image:
+    radial-gradient(1px 1px at 18% 20%, #fff 0 70%, transparent),
+    radial-gradient(2px 2px at 70% 25%, #fff 0 70%, transparent),
+    radial-gradient(1px 1px at 60% 60%, #fff 0 70%, transparent),
+    radial-gradient(1px 1px at 28% 80%, #fff 0 70%, transparent);
+  background-size: 130px 110px;
+  animation: glitter 4s ease-in-out infinite alternate;
+}
+.glitter-word {
+  background: linear-gradient(
+    #fdf6f9 10%,
+    #bca9b1 36%,
+    #fff 44%,
+    #674454 46%,
+    #ded0d8 58%,
+    #f0dce4 68%,
+    #a45f77 95%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(2px 3px 0 #080408) drop-shadow(-1px -1px 0 #e5c5d455);
+}
+.banner-ornament {
+  color: #742a42;
+  text-shadow: 1px 1px #ca859366;
+}
+.banner-stamp {
+  color: #ac7b8d;
+}
+.banner-kicker {
+  color: #d4aab9;
+}
+.banner-corner {
+  color: #9f5872;
+}
+.banner-subtitle em {
+  color: #f18ba4;
+}
+.banner-ticker {
+  color: #d9afb9;
+}
+.badge-row span:nth-child(2) {
+  transform: rotate(-2deg);
+}
+.badge-row span:nth-child(3) {
+  transform: rotate(2deg);
+}
+html[data-layout="bloodmoon"] {
+  --ink: #f6e1dc;
+  --paper: #2e090d;
+  --edge: #b75456;
+  --accent: #ff9a8b;
+  --link: #ffc3a9;
+  --link-hover: #fff;
+  --panel: #3c1018;
+  --panel-head: linear-gradient(#a9283d, #601625);
+  --label: #6b2631;
+  --cell: #49131d;
+  --network: repeating-linear-gradient(
+    -45deg,
+    #611629 0 12px,
+    #4c1022 12px 24px
+  );
+  --player: linear-gradient(110deg, #63202a, #290a15);
+  --selected: #742235;
+  --badge: #4c1420;
+  --footer: #21060e;
+  --button: linear-gradient(#82303c, #3d1020);
+}
+@keyframes glitter {
+  0%,
+  30% {
+    opacity: 0.35;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
