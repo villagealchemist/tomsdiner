@@ -4,6 +4,6 @@
 
 The tie-dye and friend tiles are CSS treatments and text labels, not official brand logos. Top 8 is explicitly MJ's mood board, not a claim that Max ranked friends or endorsed this page.
 
-Music links preserve MAMÍ × PAPÍ release credits. No audio is copied or autoplayed. No finished solo mix was selected. The love note is a marked draft for MJ. No invented public comments or audience counts appear.
+No profile track or solo mix has been selected. Future music features should use Max's solo work or material she explicitly approves for this page. The love note is a marked draft for MJ. No invented public comments or audience counts appear.
 
 MJ authorized publishing this vision board to maxmuerte.gay on November 26, 2026. It remains explicitly MJ's interpretation rather than Max's official artist site. The page retains noindex while its creative direction develops; publication authorization does not change the portrait's ownership or licensing.
