@@ -50,3 +50,18 @@ Their preview will be available at `http://127.0.0.1:4178/person-slug/`. Buildin
 Each `dist/<person-slug>/` folder is a complete static website with its own `index.html` and `assets/`. Configure a separate static deployment for each person's domain, using the corresponding build command and output folder. For Max, the command is `npm run build -- max-muerte` and the output folder is `dist/max-muerte`.
 
 Sharing a repository makes improvements to common components and behavior reusable. Separate markup, theme files, and deployments let each person's page develop its own style and release schedule. No hosting, domain routing, repository publication, or artist-account changes are performed by these scripts.
+
+## Cloudflare deployment
+
+Max's Worker is `tomsdiner-max-muerte`, configured in `wrangler.max-muerte.jsonc`. Cloudflare Workers Builds uses `main` with build command `npm run check && npm run build -- max-muerte` and deploy command `npm run deploy:max-muerte`. `.node-version` pins the build runtime, and Wrangler is pinned in `package.json`.
+
+To deploy manually from an authenticated terminal:
+
+```sh
+npm install
+npm run check
+npm run build -- max-muerte
+npm run deploy:max-muerte
+```
+
+The deploy command publishes only Max's generated directory. Kelsey's existing Worker and domain remain independent. Keep the page's explicit MJ vision-board framing and source credits intact.

@@ -6,4 +6,4 @@ The tie-dye and friend tiles are CSS treatments and text labels, not official br
 
 Music links preserve MAMÍ × PAPÍ release credits. No audio is copied or autoplayed. No finished solo mix was selected. The love note is a marked draft for MJ. No invented public comments or audience counts appear.
 
-The page is an unapproved creative preview for maxmuerte.gay and carries noindex. Select publication assets and final copy with MJ and Max before a public launch.
+MJ authorized publishing this vision board to maxmuerte.gay on November 26, 2026. It remains explicitly MJ's interpretation rather than Max's official artist site. The page retains noindex while its creative direction develops; publication authorization does not change the portrait's ownership or licensing.

@@ -10,10 +10,12 @@
   "scripts": {
     "build": "node scripts/build.ts",
     "dev": "node scripts/serve.ts",
+    "deploy:max-muerte": "wrangler deploy --config wrangler.max-muerte.jsonc",
     "check": "tsc --noEmit --strict --noUncheckedIndexedAccess --exactOptionalPropertyTypes --erasableSyntaxOnly --target ES2024 --module NodeNext --moduleResolution NodeNext --lib ES2024,DOM,DOM.Iterable --types node --allowImportingTsExtensions scripts/build.ts scripts/serve.ts src/shared.ts"
   },
   "devDependencies": {
     "@types/node": "26.1.2",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "wrangler": "4.118.0"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "tomsdiner-max-muerte",
+  "account_id": "18cee019ca223130c7c3eb106bbefb73",
+  "compatibility_date": "2026-11-26",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist/max-muerte",
+    "not_found_handling": "404-page"
+  }
+}
