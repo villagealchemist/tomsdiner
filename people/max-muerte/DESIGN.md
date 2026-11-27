@@ -30,3 +30,9 @@ At phone widths, the name, face, profile description, and contact links are asse
 Fayte Pixel Hard supports the actual logo on profile headings, with Verdana and monospace details for reading. Darka, Gothique MN, and P22 Canterbury Pro remain in the shortlist. These are implementation choices for MJ and Max to react to, not a claim that they selected a final brand system.
 
 Adobe Fonts web project: `maxmuerte.gay`, ID `wop5ols`. Embed: `https://use.typekit.net/wop5ols.css`. CSS family: `"fayte-pixel-hard"`, normal, 400. The project contains the Hard style only and was created in MJ's existing Adobe account on November 26, 2026.
+
+## Interactive material study
+
+The page now offers three authored finishes for Max's PSD-derived lettering: Blood red, Ultraviolet, and Silver. Each has its own reflection bands, edge color, specular light, and supporting room illumination. The portrait is never recolored by these controls. The default remains Blood red, and selections last for the current page visit.
+
+The canonical SVG geometry is embedded inline so its lighting can respond to a fine pointer over the opening profile composition. It uses one queued animation frame at a time, rests when the pointer leaves, and disables pointer-following for touch and reduced-motion preferences. The existing light dimmer remains independent of the chosen finish.
