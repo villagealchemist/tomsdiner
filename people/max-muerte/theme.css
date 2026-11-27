@@ -134,6 +134,7 @@ blockquote {
 .hero-copy {
   grid-column: 2;
   grid-row: 1;
+  min-width: 0;
   padding: 12px 0 24px;
   position: relative;
   z-index: 1;
@@ -150,19 +151,13 @@ blockquote {
   margin-right: 10px;
 }
 .hero h1 {
-  font: 400 clamp(92px, 12vw, 164px)/0.88 var(--display);
-  letter-spacing: -3px;
+  font: inherit;
   margin: 30px 0 32px;
-  padding: 0 0 12px;
 }
-.hero h1 span {
+.hero-logo {
   display: block;
-}
-.hero h1 span:first-child {
-  color: var(--ink);
-}
-.hero h1 span:last-child {
-  color: var(--red);
+  width: 100%;
+  height: auto;
 }
 .hero-tagline {
   font:
@@ -618,9 +613,6 @@ button[data-love]:hover {
   .interest-grid p {
     max-width: 410px;
   }
-  .hero h1 {
-    font-size: clamp(78px, 12vw, 130px);
-  }
   .hero-tagline {
     font-size: 23px;
   }
@@ -652,17 +644,17 @@ button[data-love]:hover {
     margin-right: 5px;
   }
   .hero {
+    grid-template-columns: 1fr;
     padding-top: 36px;
-    column-gap: 4%;
     align-items: start;
   }
   .hero-copy {
-    padding-top: 5px;
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0 0 28px;
   }
   .hero h1 {
-    font-size: clamp(56px, 14.5vw, 97px);
-    letter-spacing: -1px;
-    margin: 18px 0 15px;
+    margin: 22px 0 24px;
   }
   .hero-copy .eyebrow {
     font-size: 8px;
@@ -672,11 +664,12 @@ button[data-love]:hover {
     margin-right: 4px;
   }
   .hero-tagline {
-    font-size: 18px;
+    font-size: 23px;
+    max-width: none;
     margin-bottom: 14px;
   }
   .hero-roles {
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1.8;
     letter-spacing: 0;
   }
@@ -687,14 +680,15 @@ button[data-love]:hover {
   .hero-portrait > a {
     padding: 5px;
   }
-  .hero-portrait img {
-    aspect-ratio: 3 / 5;
-    object-position: 48% center;
+  .hero-portrait {
+    grid-column: 1;
+    grid-row: 2;
   }
   .hero-portrait figcaption {
     font-size: 9px;
   }
   .hero-index {
+    grid-row: 3;
     margin-top: 24px;
     padding: 18px 0;
     font-size: 8px;
@@ -818,41 +812,10 @@ button[data-love]:hover {
     gap: 0 9px;
   }
   .hero {
-    grid-template-columns: 1fr;
     padding-top: 28px;
   }
-  .hero-copy {
-    grid-column: 1;
-    grid-row: 1;
-    padding: 0 0 28px;
-  }
   .hero h1 {
-    font-size: clamp(76px, 25vw, 100px);
-    line-height: 0.9;
     margin: 20px 0;
-  }
-  .hero h1 span {
-    display: inline;
-  }
-  .hero h1 span:last-child {
-    display: block;
-  }
-  .hero-tagline {
-    font-size: 23px;
-    max-width: none;
-  }
-  .hero-roles {
-    font-size: 10px;
-  }
-  .hero-portrait {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .hero-portrait img {
-    aspect-ratio: 4 / 5;
-  }
-  .hero-index {
-    grid-row: 3;
   }
   .interest-grid {
     grid-template-columns: 1fr;

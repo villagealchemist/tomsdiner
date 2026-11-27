@@ -1,5 +1,7 @@
 # Max's preview assets
 
+`assets/max-muerte-logo-red.png` is Max's actual logo with the red Photoshop treatment supplied by MJ on November 27, 2026. MJ requested its publication on Max's page. Use the supplied artwork intact, preserving its proportions and details; do not reconstruct it with a font, crop it, or add filters. It is an artist-supplied identity asset, not an asset covered by this repository's software license.
+
 `assets/max-red-robe.jpg` is the published Instagram portrait from https://www.instagram.com/max_muerte/p/DeZzB5Qif3f/ . The source credits photography to **@photokyleryan2** and the **Bite Me** robe to **Priscilla Couture × TKINK**. Keep those credits with the image. It is a preview reference, not an asset covered by this repository's software license.
 
 The friend index uses text labels, not official brand logos. Top 8 is explicitly MJ's mood board, not a claim that Max ranked friends or endorsed this page.
