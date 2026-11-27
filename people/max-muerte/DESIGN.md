@@ -19,12 +19,14 @@ Compare the selected families against Max's page and refine their roles with MJ 
 
 When a role is selected for implementation, use the approved webfont embed or supplied assets. The screenshot identifies the families but does not provide embed details, font files, or the specific styles within each family.
 
-## Independent page direction
+## Current personal-space direction
 
-MJ asked for Max's own composition rather than a copy of Kelsey's MySpace. Max's page now has a dedicated stylesheet and portrait-led opening, with robe red, black, and warm bone; compact profile details on the right; and a linked Top 8 index. Shared JavaScript still provides the photo viewer and local guestbook hearts.
+MJ rejected the flat PNG inserted into the editorial layout and explicitly asked for creative work from the layered Photoshop source on November 27, 2026. The current composition treats the logo, portrait, red light, and profile panels as one customized personal space.
 
-The main name treatment uses Max's actual logo, supplied by MJ on November 27, 2026, with the red Photoshop bevel treatment they explored together. Preserve that artwork's letterforms, proportions, and hanging diamond details. It replaces the earlier typeset name. The original logo remains the master identity; this image is a styled variation for the page.
+The original letter contours come from Layer 2 of `RED_Max_Muerte_FONT.psd`, exported as a transparent SVG with new red gradient and bevel lighting. The name crosses the framed portrait instead of sitting inside an opaque black rectangle. Compact navigation, oxblood window panels, individually designed Top 8 tiles, and a functional light switch recall a heavily customized 2008 profile. MJ's vision-board attribution lives in the footer.
 
-Fayte Pixel Hard supports the logo on section headings, with Verdana and monospace details for reading. This is an implementation choice for MJ and Max to react to, not a claim that they selected a final pairing. Darka, Gothique MN, and P22 Canterbury Pro remain in the shared shortlist. At phone widths, the logo takes the full content width above the portrait instead of being squeezed into a narrow column.
+At phone widths, the name, face, profile description, and contact links are assembled into a compact opening. The real photograph and photo credits remain intact. Shared JavaScript handles the photo viewer and local guestbook hearts; Max's own `assets/atmosphere.js` controls the red illumination. Slow ambient movement respects `prefers-reduced-motion`. There is no invented player, online status, audience count, or public guestbook submission.
+
+Fayte Pixel Hard supports the actual logo on profile headings, with Verdana and monospace details for reading. Darka, Gothique MN, and P22 Canterbury Pro remain in the shortlist. These are implementation choices for MJ and Max to react to, not a claim that they selected a final brand system.
 
 Adobe Fonts web project: `maxmuerte.gay`, ID `wop5ols`. Embed: `https://use.typekit.net/wop5ols.css`. CSS family: `"fayte-pixel-hard"`, normal, 400. The project contains the Hard style only and was created in MJ's existing Adobe account on November 26, 2026.

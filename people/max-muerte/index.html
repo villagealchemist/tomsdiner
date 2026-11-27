@@ -9,218 +9,240 @@
     <link rel="stylesheet" href="https://use.typekit.net/wop5ols.css" />
     <link rel="stylesheet" href="assets/theme.css" />
     <script src="assets/shared.js" defer></script>
+    <script src="assets/atmosphere.js" defer></script>
   </head>
   <body id="top" data-profile="max-muerte">
     <a class="skip-link" href="#profile">Skip to Max's profile</a>
+    <div class="atmosphere" aria-hidden="true">
+      <span>◇</span><span>◇</span>
+    </div>
     <div class="page-shell">
       <header class="site-header">
         <a class="diner-link" href="#top"
           >tom's diner <span aria-hidden="true">✦</span></a
         >
-        <span class="header-note">a space of your own</span>
-        <nav class="site-nav" aria-label="Profile navigation">
-          <a href="#about">About</a>
-          <a href="#photos">Pictures</a>
-          <a href="#top-eight">Top 8</a>
-          <a href="#love-note">Leave love</a>
-        </nav>
+        <span class="domain">{{DOMAIN}}</span>
+        <button
+          class="lights-switch"
+          type="button"
+          data-lights
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">◐</span> Dim the lights
+        </button>
       </header>
-
+      <nav class="site-nav" aria-label="Profile navigation">
+        <a href="#about">Profile</a><a href="#photos">Pictures</a
+        ><a href="#top-eight">Top 8</a
+        ><a href="#love-note">Leave love <span aria-hidden="true">♡</span></a>
+      </nav>
       <main>
-        <section class="hero" id="profile" aria-labelledby="profile-name">
-          <div class="hero-copy">
-            <p class="eyebrow">A vision board by MJ</p>
+        <section
+          class="profile-stage"
+          id="profile"
+          aria-labelledby="profile-name"
+        >
+          <div class="stage-corner corner-one" aria-hidden="true">✧</div>
+          <div class="stage-corner corner-two" aria-hidden="true">✧</div>
+          <div class="identity">
+            <p class="identity-kicker">
+              <span></span> The personal space of <span></span>
+            </p>
             <h1 id="profile-name">
               <img
                 class="hero-logo"
-                src="assets/max-muerte-logo-red.png"
+                src="assets/max-muerte-lettering.svg"
                 alt="Max Muerte"
-                width="2048"
-                height="528"
+                width="3306"
+                height="853"
                 fetchpriority="high"
               />
             </h1>
-            <p class="hero-tagline">Meet me on the dance floor.</p>
-            <p class="hero-roles">
-              DJ / producer / performer<br />model / designer
-            </p>
-            <a class="enter-link" href="#about"
-              >Enter my world <span aria-hidden="true">↓</span></a
-            >
           </div>
-          <figure class="hero-portrait">
-            <a
-              href="assets/max-red-robe.jpg"
-              data-photo
-              data-caption="Max in the ‘Bite Me’ robe. Priscilla Couture × TKINK. Photography: @photokyleryan2."
-            >
-              <img
-                src="assets/max-red-robe.jpg"
-                alt="Max Muerte in a vivid red robe, arms raised above her head"
-                width="1170"
-                height="1560"
-                fetchpriority="high"
-              />
-            </a>
-            <figcaption>
-              Max, in red. / Photo
-              <a
-                href="https://www.instagram.com/photokyleryan2/"
-                target="_blank"
-                rel="noopener"
-                >@photokyleryan2</a
-              >
-            </figcaption>
-          </figure>
-          <div class="hero-index">
-            <span>Philadelphia, Pennsylvania</span
-            ><span>Personal space / 2008 forever</span>
-          </div>
-        </section>
-
-        <section
-          class="content-grid"
-          id="about"
-          aria-labelledby="about-heading"
-        >
-          <article class="about-page">
-            <div class="section-heading">
-              <span class="section-number">01 /</span>
-              <h2 id="about-heading">About Max</h2>
-            </div>
-            <p class="about-lead">Music. Movement.<br />Things made by hand.</p>
-            <p>
-              A dance floor, a dramatic silhouette, something made from scratch.
-              This little corner brings Max's creative worlds together.
-            </p>
-            <blockquote>
-              <p>“DNB was my first love.”</p>
-              <cite>Max Muerte</cite>
-            </blockquote>
-            <div class="interest-grid">
-              <div>
-                <h3>The sound</h3>
-                <p>Techno, house, breaks &amp; bass.</p>
-              </div>
-              <div>
-                <h3>The shape</h3>
-                <p>Couture after dark. Room to move.</p>
-              </div>
-              <div>
-                <h3>The hands</h3>
-                <p>Max Muerte Dyes. Color made personal.</p>
-              </div>
-            </div>
-          </article>
-          <aside
-            class="profile-card"
-            aria-label="Max's links and profile details"
-          >
-            <p class="eyebrow">{{DOMAIN}}</p>
-            <h2>Find me</h2>
-            <div class="contact-links">
-              <a
-                href="https://www.instagram.com/{{HANDLE}}/"
-                target="_blank"
-                rel="noopener"
-                >Instagram <span aria-hidden="true">↗</span></a
-              >
-              <a
-                href="https://www.facebook.com/MaxxMuerte"
-                target="_blank"
-                rel="noopener"
-                >Facebook <span aria-hidden="true">↗</span></a
-              >
-            </div>
-            <button type="button" data-love>♡ Leave a little love</button>
-            <dl>
-              <dt>Location</dt>
-              <dd>Philadelphia</dd>
-              <dt>Here for</dt>
-              <dd>A world of her own</dd>
-              <dt>Made by</dt>
-              <dd>MJ, with love</dd>
-            </dl>
-            <p class="card-note">A lovingly biased vision board by MJ.</p>
-            <a href="#top-eight">Meet the extended network ↓</a>
-          </aside>
-        </section>
-
-        <section class="wardrobe" id="photos" aria-labelledby="photos-heading">
-          <div class="section-heading">
-            <span class="section-number">02 /</span>
-            <h2 id="photos-heading">The picture space</h2>
-          </div>
-          <div class="wardrobe-grid">
-            <figure class="wardrobe-photo">
+          <div class="profile-layout">
+            <figure class="hero-portrait">
               <a
                 href="assets/max-red-robe.jpg"
                 data-photo
-                data-caption="The ‘Bite Me’ robe. Priscilla Couture × TKINK. Photography: @photokyleryan2."
+                data-caption="Max in the ‘Bite Me’ robe. Priscilla Couture × TKINK. Photography: @photokyleryan2."
               >
                 <img
                   src="assets/max-red-robe.jpg"
-                  alt="Full portrait of Max wearing the red ‘Bite Me’ robe"
+                  alt="Max Muerte in a vivid red robe, arms raised above her head"
                   width="1170"
                   height="1560"
-                  loading="lazy"
+                  fetchpriority="high"
                 />
-              </a>
-              <figcaption>Click to see the whole picture.</figcaption>
-            </figure>
-            <div class="wardrobe-copy">
-              <p class="eyebrow">From the wardrobe</p>
-              <h3>Bite me.</h3>
-              <p>Red sleeves. A little drama.<br />A whole lot of Max.</p>
-              <p class="photo-credit">
-                “Bite Me” robe by
-                <a
-                  href="https://www.instagram.com/priscilla.couture/"
-                  target="_blank"
-                  rel="noopener"
-                  >Priscilla Couture</a
+                <span class="picture-label"
+                  >View picture <span aria-hidden="true">↗</span></span
                 >
-                ×
-                <a
-                  href="https://www.instagram.com/tkink.brand/"
-                  target="_blank"
-                  rel="noopener"
-                  >TKINK</a
-                >.<br />Photography by
+              </a>
+              <figcaption>
+                Photo
                 <a
                   href="https://www.instagram.com/photokyleryan2/"
                   target="_blank"
                   rel="noopener"
                   >@photokyleryan2</a
-                >.
+                >
+              </figcaption>
+            </figure>
+            <div class="profile-intro">
+              <p class="location">
+                <span aria-hidden="true">♦</span> Philadelphia, Pennsylvania
               </p>
-              <a
-                class="collection-link"
-                href="https://www.instagram.com/max_muerte/p/Df3GWXMDQul/"
-                target="_blank"
-                rel="noopener"
-                >Max Muerte Dyes ↗<span
-                  >Things made by hand / view the collection</span
-                ></a
-              >
+              <p class="hero-tagline">Meet me on the<br />dance floor.</p>
+              <p class="hero-roles">
+                DJ / producer / performer<br />model / designer
+              </p>
+              <div class="contact-links">
+                <a
+                  href="https://www.instagram.com/{{HANDLE}}/"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram <span aria-hidden="true">↗</span></a
+                >
+                <a
+                  href="https://www.facebook.com/MaxxMuerte"
+                  target="_blank"
+                  rel="noopener"
+                  >Facebook <span aria-hidden="true">↗</span></a
+                >
+                <button type="button" data-love>
+                  <span aria-hidden="true">♡</span> Leave love
+                </button>
+              </div>
+              <div class="personal-banner">
+                <span aria-hidden="true">✧</span>
+                <p>Music. Movement.<br />Things made by hand.</p>
+                <span aria-hidden="true">✧</span>
+              </div>
             </div>
           </div>
+          <div class="stage-footer">
+            <span>Personal space</span><span aria-hidden="true">✦</span
+            ><span>2008 forever</span>
+          </div>
         </section>
-
+        <div class="profile-columns">
+          <section
+            class="panel about-panel"
+            id="about"
+            aria-labelledby="about-heading"
+          >
+            <div class="panel-heading">
+              <h2 id="about-heading">About Max</h2>
+              <span aria-hidden="true">✧</span>
+            </div>
+            <div class="panel-body">
+              <p class="about-intro">
+                A dance floor, a dramatic silhouette, something made from
+                scratch. This little corner brings Max's creative worlds
+                together.
+              </p>
+              <blockquote>
+                <p>“DNB was my first love.”</p>
+                <cite>Max Muerte</cite>
+              </blockquote>
+              <dl class="interests">
+                <div>
+                  <dt>Music</dt>
+                  <dd>Techno, house, breaks &amp; bass.</dd>
+                </div>
+                <div>
+                  <dt>Fashion</dt>
+                  <dd>Couture after dark. Room to move.</dd>
+                </div>
+                <div>
+                  <dt>Made by Max</dt>
+                  <dd>
+                    <a
+                      href="https://www.facebook.com/maxmuertedyes"
+                      target="_blank"
+                      rel="noopener"
+                      >Max Muerte Dyes <span aria-hidden="true">↗</span></a
+                    ><br />Color made personal.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </section>
+          <section
+            class="panel wardrobe-panel"
+            id="photos"
+            aria-labelledby="photos-heading"
+          >
+            <div class="panel-heading">
+              <h2 id="photos-heading">From the wardrobe</h2>
+              <span aria-hidden="true">✧</span>
+            </div>
+            <div class="wardrobe-layout">
+              <figure class="wardrobe-photo">
+                <a
+                  href="assets/max-red-robe.jpg"
+                  data-photo
+                  data-caption="The ‘Bite Me’ robe. Priscilla Couture × TKINK. Photography: @photokyleryan2."
+                  ><img
+                    src="assets/max-red-robe.jpg"
+                    alt="Detail of Max's red ‘Bite Me’ robe; open the full portrait"
+                    width="1170"
+                    height="1560"
+                    loading="lazy"
+                  /><span>Open picture ↗</span></a
+                >
+              </figure>
+              <div class="wardrobe-copy">
+                <p class="eyebrow">A little drama</p>
+                <h3>Bite me.</h3>
+                <p>Red sleeves.<br />A whole lot of Max.</p>
+                <p class="photo-credit">
+                  Robe by
+                  <a
+                    href="https://www.instagram.com/priscilla.couture/"
+                    target="_blank"
+                    rel="noopener"
+                    >Priscilla Couture</a
+                  >
+                  ×
+                  <a
+                    href="https://www.instagram.com/tkink.brand/"
+                    target="_blank"
+                    rel="noopener"
+                    >TKINK</a
+                  >.<br />Photo:
+                  <a
+                    href="https://www.instagram.com/photokyleryan2/"
+                    target="_blank"
+                    rel="noopener"
+                    >@photokyleryan2</a
+                  >
+                </p>
+              </div>
+            </div>
+            <a
+              class="collection-link"
+              href="https://www.instagram.com/max_muerte/p/Df3GWXMDQul/"
+              target="_blank"
+              rel="noopener"
+              ><span>Max Muerte Dyes</span><span>View the collection ↗</span></a
+            >
+          </section>
+        </div>
         <section
-          class="friend-space"
+          class="panel friend-space"
           id="top-eight"
           aria-labelledby="friends-heading"
         >
-          <div class="section-heading">
-            <span class="section-number">03 /</span>
+          <div class="panel-heading">
             <h2 id="friends-heading">The extended network</h2>
+            <span>Top 8</span>
           </div>
           <p class="section-note">
             MJ's Top 8 mood board. No friendship rankings were harmed.
           </p>
           <div class="friend-index">
             <a
+              class="friend friend-jux"
               href="https://www.instagram.com/juxnow/"
               target="_blank"
               rel="noopener"
@@ -229,14 +251,16 @@
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-fold"
               href="https://www.instagram.com/foldtheory/"
               target="_blank"
               rel="noopener"
-              ><span class="friend-number">02</span><b>Fold Theory</b
+              ><span class="friend-number">02</span><b>Fold<br />Theory</b
               ><small>after hours</small
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-priscilla"
               href="https://www.instagram.com/priscilla.couture/"
               target="_blank"
               rel="noopener"
@@ -245,6 +269,7 @@
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-tkink"
               href="https://www.instagram.com/tkink.brand/"
               target="_blank"
               rel="noopener"
@@ -253,6 +278,7 @@
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-pyroxotic"
               href="https://www.instagram.com/pyroxotic.entertainment/"
               target="_blank"
               rel="noopener"
@@ -261,39 +287,53 @@
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-dyes"
               href="https://www.facebook.com/maxmuertedyes"
               target="_blank"
               rel="noopener"
-              ><span class="friend-number">06</span><b>Muerte Dyes</b
+              ><span class="friend-number">06</span><b>Muerte<br />Dyes</b
               ><small>made by Max</small
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
             <a
+              class="friend friend-rabbit"
               href="https://www.instagram.com/nomadicrabbitholes/"
               target="_blank"
               rel="noopener"
-              ><span class="friend-number">07</span><b>Rabbit Holes</b
+              ><span class="friend-number">07</span><b>Rabbit<br />Holes</b
               ><small>down we go</small
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
-            <a href="https://koeventing.gay/" target="_blank" rel="noopener"
-              ><span class="friend-number">08</span><b>Kelsey's page</b
+            <a
+              class="friend friend-kelsey"
+              href="https://koeventing.gay/"
+              target="_blank"
+              rel="noopener"
+              ><span class="friend-number">08</span><b>Kelsey's<br />page</b
               ><small>our first .gay</small
               ><span class="friend-arrow" aria-hidden="true">↗</span></a
             >
           </div>
         </section>
-
         <section
-          class="guestbook"
+          class="panel guestbook"
           id="love-note"
           aria-labelledby="guestbook-heading"
         >
-          <div class="section-heading">
-            <span class="section-number">04 /</span>
+          <div class="panel-heading">
             <h2 id="guestbook-heading">Leave some love</h2>
+            <span aria-hidden="true">♡</span>
           </div>
           <div class="guestbook-grid">
+            <div class="guestbook-actions">
+              <p class="guestbook-note">I was here.</p>
+              <button type="button" data-love>
+                <span aria-hidden="true">♡</span> Leave a little love
+              </button>
+              <p data-love-status role="status" aria-live="polite">
+                Hearts live in this browser, like a tiny guestbook.
+              </p>
+            </div>
             <article class="letter">
               <p class="eyebrow">From MJ / 11.26.2026</p>
               <h3>For the world we're about to make.</h3>
@@ -308,19 +348,11 @@
                 >Draft love note, written for MJ to make her own.</small
               >
             </article>
-            <div class="guestbook-actions">
-              <button type="button" data-love>♡ Leave a little love</button>
-              <p data-love-status role="status" aria-live="polite">
-                Hearts live in this browser, like a tiny guestbook.
-              </p>
-              <p class="guestbook-note">
-                A little mark that says:<br />I was here.
-              </p>
-            </div>
           </div>
         </section>
       </main>
       <footer class="site-footer">
+        <span class="footer-diamond" aria-hidden="true">✧</span>
         <p>
           A vision board by MJ for Max.<br />A Tom's Diner page. The future is
           under construction.
@@ -330,9 +362,8 @@
     </div>
     <dialog class="photo-dialog" aria-labelledby="photo-caption">
       <button class="close-photo" type="button" data-close-photo>
-        Close photo
-      </button>
-      <img data-viewer-image src="assets/max-red-robe.jpg" alt="" />
+        Close photo</button
+      ><img data-viewer-image src="assets/max-red-robe.jpg" alt="" />
       <p id="photo-caption" data-viewer-caption></p>
     </dialog>
     <div class="heart-toast" role="status" aria-live="polite" hidden>
